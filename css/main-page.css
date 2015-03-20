@@ -1,0 +1,43 @@
+html {
+  display: block;
+}
+
+.red {
+  background: red;
+}
+.blue {
+  background: blue;
+}
+.light-gray {
+  background: #ccc;
+}
+
+
+.save-event-box {
+  background: #f3f3f3;
+  border: 2px solid #ccc;
+  -webkit-border-radius: 12px;
+          border-radius: 12px;
+}
+
+
+.top-row {
+  background: #f3f3f3;
+  padding: 15px;
+  border: 1px solid blue;
+}
+
+
+.save-event-box a.large {
+
+  width: 200px;
+
+}
+
+.button {
+  background: red;
+  width: 100%;
+
+  margin: 0 auto!important;
+
+}
