@@ -54,6 +54,38 @@ p.about-wording {
   font-weight: bold;
   color: #666;
 }
+.inline {
+  display: inline-block;
+  width: 400px;
+  text-align: center;
+  margin-right: 0;
+  margin-top: 10px;
+}
+
+
+.pci-img {
+  width: auto;
+  height: 40px;
+
+}
+.ssl-img {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+.braintree-img {
+  width: 100px;
+  height: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin: 0 auto;
+}
+
+.inline img {
+
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
 .map {
   height: auto;
@@ -301,4 +333,25 @@ section.right-col div.row{
 [data-slide="prev"]
 {
     margin-right: 10px;
+}
+
+.main-team-img img {
+    margin: 0 auto!important;
+    width: 250px;
+    height: auto;
+  }
+
+
+span.dates {
+
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+
+@media (max-width: 800px) {
+  .main-team-img img {
+    margin: 0 auto!important;
+  }
 }
