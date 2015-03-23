@@ -18,6 +18,14 @@ html {
     background: #FFF;
 }
 
+.event-content-row {
+    display: block;
+}
+
+.event-content-row:hover {
+    background: rgba(243, 243, 243, .4);
+}
+
 .where-and-when-box {
     margin: 0 auto!important;
     text-align: center;
@@ -139,6 +147,8 @@ a.teamwork-order-btn {
     float: right;
     font-size: 18px;
     margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 a.teamwork-order-btn:hover {
@@ -236,6 +246,28 @@ section.right-col div.row {
     border-top-left-radius: 10px;
 }
 
+.top-row.subtotal {
+    -webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+    -webkit-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom: 1px solid #ccc;
+    text-align: right;
+}
+
+span.subtotal-word {
+    display: inline-block;
+    width: 180px!important;
+    text-align: right;
+}
+
+span.subtotal-amount {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+    padding-right: 45px;
+}
+
 .top-row-right {
     background: blue;
     position: inherit;
@@ -245,6 +277,7 @@ section.right-col div.row {
     margin-left: 0!important;
     margin-right: 0!important;
     padding: 15px;
+    z-index: -20;
 }
 
 .max-1180 {
@@ -273,12 +306,12 @@ section.right-col div.row {
     margin: 0 auto!important;
 }
 /*Carousel*/
-
+/*
 {
     border: 1px solid #E1E1E1;
     border-radius: 5px;
     background: #FFF;
-}
+}*/
 
 .col-item .photo img {
     margin: 0 auto;
@@ -353,13 +386,45 @@ section.right-col div.row {
 .login-holder {
     margin: 0 auto;
     text-align: center;
-    display: none;
+       display: none;
 }
+
+.input-form-signup {
+    background-position: 0px 0px;
+    color: rgb(44, 62, 80);
+    display: block;
+    height: 43px;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    z-index: 1;
+    perspective-origin: 360px 21.5px;
+    transform-origin: 360px 21.5px;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+    border: 0px none rgb(44, 62, 80);
+    font: normal normal normal normal 22.5px/32.1428604125977px Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    outline: rgb(44, 62, 80) none 0px;
+    padding: 10px 0px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    border-bottom: 1px solid #f3f3f3;
+    padding: 20px;
+}
+/*#INPUT_1*/
+
+.form-content-holder {
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
 
 .braintree-login-img {
     background: red;
     width: 500px;
     margin: 0 auto!important;
+}
+
+.form-control {
+    background: blue;
 }
 
 .clear-left {
@@ -415,5 +480,11 @@ span.dates {
 @media (max-width: 800px) {
     .main-team-img img {
         margin: 0 auto!important;
+    }
+}
+
+@media (max-width: 400px) {
+    span.subtotal-word {
+        width: 80px!important;
     }
 }
