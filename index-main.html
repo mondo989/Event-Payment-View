@@ -8,6 +8,8 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/animate.css">
   <link rel="stylesheet" type="text/css" href="css/main-page.css">
+  <link rel="stylesheet" type="text/css" href="css/sweet-alert.css">
+  <!--   <link rel="stylesheet" href="http://lipis.github.io/bootstrap-sweetalert/lib/sweet-alert.css"> -->
   <title>Events Payment Page</title>
 </head>
 
@@ -99,26 +101,28 @@
           <div class="row top-row subtotal ">
             <span class="subtotal-word"> Subtotal: </span> <span class="subtotal-amount">$0.00</span>
           </div>
-          <div class="row pull-right ">
-            <div class="row inline pull-left">
-              <img class="ssl-img" src="http://www.security-faqs.com/wp-content/uploads/2010/03/SSL-security.jpg">
-              <img class="pci-img" src="http://www.paymentlawadvisor.com/files/2013/12/credibility_pci-logo.png">
-              <img class="braintree-img" src="http://b-i.forbesimg.com/amitchowdhry/files/2013/07/Braintree-Logo.png">
+          <div class="row">
+            <div class="col-md-8 col-xs-12 logo-holder">
+              <img class="img-responsive max-img-size " src="img/three-logo.png">
+              <!-- <img class="ssl-img" src="http://www.security-faqs.com/wp-content/uploads/2010/03/SSL-security.jpg"> <img class="pci-img" src="http://www.paymentlawadvisor.com/files/2013/12/credibility_pci-logo.png"><img class="braintree-img" src="http://b-i.forbesimg.com/amitchowdhry/files/2013/07/Braintree-Logo.png"> -->
             </div>
-            <a class="btn teamwork-order-btn order-now" id="order-it">Order Now </a>
+            <div class="col-md-4 col-xs-12">
+              <a class="btn teamwork-order-btn order-now" id="order-it">Order Now </a>
+            </div>
           </div>
           <div class="row">
-            <div class="col-md-12 text-center login-holder ">
+            <div class="col-md-12 text-center login-holder">
+              <h2 class="mb20">Please complete ticket information below</h2>
               <div class="row">
-                <h3>Please make payment below</h3>
+                <div class="top-row ticket-text ">Ticket #1 Nets/TeamWork RSVP - Section 226</div>
                 <div class="col-md-12 col-sm-12 form-content-holder">
                   <div class="input-group">
-                    <input type="text" name="name" placeholder="First Name" class="input-form-signup" />
+                    <input name="name" placeholder="First Name" class="input-form-signup" />
                   </div>
                 </div>
                 <div class="col-md-12 col-sm-12 form-content-holder">
                   <div class="input-group">
-                    <input type="text" name="name" placeholder="Last Name" class="input-form-signup" />
+                    <input name="name" placeholder="Last Name" class="input-form-signup" />
                   </div>
                 </div>
                 <div class="col-md-12 col-sm-12 form-content-holder">
@@ -133,15 +137,87 @@
                 </div>
                 <div class="col-md-12 col-sm-12 form-content-holder">
                   <div class="input-group">
+                    <input type="email" name="name" placeholder="Confirm Email" class="input-form-signup" />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="top-row ticket-text ">Work Information</div>
+                <div class="col-md-12 col-sm-12 form-content-holder">
+                  <div class="input-group">
+                    <input type="text" name="name" placeholder="Job Title" class="input-form-signup" />
+                  </div>
+                </div>
+                <div class="col-md-12 col-sm-12 form-content-holder">
+                  <div class="input-group">
+                    <input type="text" name="name" placeholder="Company / Organization" class="input-form-signup" />
+                  </div>
+                </div>
+              </div>
+                <div class="row">
+                <div class="top-row ticket-text ">Ticket #2 Nets/TeamWork RSVP - Section 226</div>
+                <div class="col-md-12 col-sm-12 form-content-holder">
+                  <div class="input-group">
+                    <input name="name" placeholder="First Name" class="input-form-signup" />
+                  </div>
+                </div>
+                <div class="col-md-12 col-sm-12 form-content-holder">
+                  <div class="input-group">
+                    <input name="name" placeholder="Last Name" class="input-form-signup" />
+                  </div>
+                </div>
+                <div class="col-md-12 col-sm-12 form-content-holder">
+                  <div class="input-group">
+                    <input type="phone" name="name" placeholder="Cell Number" class="input-form-signup" />
+                  </div>
+                </div>
+                <div class="col-md-12 col-sm-12 form-content-holder">
+                  <div class="input-group">
+                    <input type="email" name="name" placeholder="Email Address" class="input-form-signup" />
+                  </div>
+                </div>
+                <div class="col-md-12 col-sm-12 form-content-holder">
+                  <div class="input-group">
+                    <input type="email" name="name" placeholder="Confirm Email" class="input-form-signup" />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="top-row ticket-text ">Work Information</div>
+                <div class="col-md-12 col-sm-12 form-content-holder">
+                  <div class="input-group">
+                    <input type="text" name="name" placeholder="Job Title" class="input-form-signup" />
+                  </div>
+                </div>
+                <div class="col-md-12 col-sm-12 form-content-holder">
+                  <div class="input-group">
+                    <input type="text" name="name" placeholder="Company / Organization" class="input-form-signup" />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="top-row ticket-text ">Payment & Billing Information</div>
+                <div class="col-md-12 col-sm-12 form-content-holder">
+                  <div class="input-group">
+                    <input type="text" name="name" placeholder="First Name" class="input-form-signup">
+                  </div>
+                </div>
+                <div class="col-md-12 col-sm-12 form-content-holder">
+                  <div class="input-group">
+                    <input type="text" name="name" placeholder="Last Name" class="input-form-signup" />
+                  </div>
+                </div>
+                <div class="col-md-35 col-sm-12 form-content-holder">
+                  <div class="input-group">
                     <input type="email" name="name" placeholder="Card" class="input-form-signup" />
                   </div>
                 </div>
-                <div class="col-md-6 col-xs-12 form-content-holder">
+                <div class="col-md-35 col-xs-12 form-content-holder">
                   <div class="input-group">
                     <input type="email" name="name" placeholder="Expiration Date" class="input-form-signup expiration" />
                   </div>
                 </div>
-                <div class="col-md-5 col-xs-12 form-content-holder">
+                <div class="col-md-35 col-xs-12 form-content-holder">
                   <div class="input-group">
                     <input type="email" name="name" placeholder="CW" class="input-form-signup" />
                   </div>
@@ -150,12 +226,25 @@
               <br>
               <section class="pay-now-row">
                 <div class="row total-pay-now-row">
-                  <div class="col-md-12 text-center">
-                    <p>Your current total is:<span class="strong">  $140.00</span> </p>
+                  <div class="col-md-35 text-center">
+                    <p>Your current total is:<span class="strong">  $163</span> </p>
                   </div>
                   <div class="col-md-12 text-center">
-                    <a class="btn teamwork-pay-now-btn" id="pay-now">Pay Now </a>
+                    <a class="btn sweet-20"> Error </a>
+                    <br>
+                    <br>
+                    <a class="btn teamwork-pay-now-btn sweet-12" id="pay-now">Pay Now </a>
+                   
                   </div>
+                  <div class="col-md-12 text-center">
+                    <img class="img-responsive max-img-size" src="img/three-logo.png">
+                  </div>
+                  <div class="clear"></div>
+                 <!--  <div class="row inline">
+                    <img class="ssl-img" src="http://www.security-faqs.com/wp-content/uploads/2010/03/SSL-security.jpg">
+                    <img class="pci-img" src="http://www.paymentlawadvisor.com/files/2013/12/credibility_pci-logo.png">
+                    <img class="braintree-img" src="http://b-i.forbesimg.com/amitchowdhry/files/2013/07/Braintree-Logo.png">
+                  </div> -->
                 </div>
               </section>
             </div>
@@ -236,7 +325,7 @@
   </div>
   <br>
   <br>
-  <div class="row hidden-sm hidden-xs">
+  <div class="row gray-bkground hidden-sm hidden-xs">
     <div class="container">
       <div class="row">
         <div class="col-md-9 col-sm-9 col-xs-9">
@@ -451,18 +540,15 @@
     <br>
     <br>
     <br>
+    <!-- Modal  -->
+    <div class="container">
+      <!-- <button class="btn btn-lg btn-success sweet-12" onclick="_gaq.push(['_trackEvent', 'example, 'try', 'Success']);">Success</button> -->
+      <!-- <button class="btn btn-lg btn-danger sweet-14" onclick="_gaq.push(['_trackEvent', 'example, 'try', 'Danger']);">Danger</button> -->
+    </div>
     <script src="js/jquery.js" type="text/javascript"></script>
     <script src="js/bootstrap.js" type="text/javascript"></script>
-    <script type="text/javascript">
-    $("#order-it").click(function() {
-
-
-      $('#order-it').hide("slow");
-      $('.inline').hide("slow");
-      $('.login-holder').show();
-      $('#pay-now').show();
-    });
-    </script>
+    <script src="js/app.js" type="text/javascript"></script>
+    <script src="http://lipis.github.io/bootstrap-sweetalert/lib/sweet-alert.js"></script>
 </body>
 
 </html>
