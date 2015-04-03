@@ -1,0 +1,266 @@
+.green-ft {
+  color: green;
+}
+
+.card-base h2 {
+  text-align: center;
+}
+
+h2.order-placed {
+  font-weight: 500;
+  text-align: left!important;
+}
+
+h2.lead {
+  font-weight: 400;
+}
+
+.card-base {
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ddd;
+  -webkit-border-bottom-right-radius: 12px;
+          border-bottom-right-radius: 12px;
+    -webkit-border-bottom-left-radius: 12px;
+          border-bottom-left-radius: 12px;
+}
+
+.social-icons {
+  text-align: center;
+}
+
+.social-icons .circle {
+  background: white;
+  -webkit-border-radius: 120px;
+  border-radius: 120px;
+  border: 3px solid #ccc;
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  text-align: center;
+}
+
+.card-base .circle:hover {
+   -webkit-transform: scale(1.2);
+       -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+         -o-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+.card-base .circle {
+  margin: 20px 10px;
+
+  -webkit-transition: .5s;
+-moz-transition: .5s;
+-ms-transition: .5s;
+-o-transition: .5s;
+transition: .5s;
+}
+
+.circle.fb:hover {
+    background: #3b5998;
+    color: white;
+}
+
+.circle.twi:hover {
+    color: white;
+    background: #55ACEE;
+}
+
+.circle.lin:hover {
+    color: white;
+    background: #4875B4;
+}
+
+
+.circle.ema:hover {
+    color: white;
+    background: #C63D2D;
+}
+
+.circle.fb {
+  color: #3b5998;
+}
+
+.circle.twi {
+  color: #55ACEE;
+}
+
+.circle.lin {
+  color: #4875B4;
+}
+
+.circle.ema {
+  color: #C63D2D;
+}
+
+
+
+.fa-check-circle-o {
+  color:  rgb(71, 182, 73);
+  font-size: 30px;
+}
+
+
+.width-90 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.sep-space {
+  background: blue;
+  
+}
+
+.fa.fa-calendar {
+  margin-left: 10px;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.social-icons i.fa {
+  font-size: 30px;
+  margin-top: 17px;
+}
+
+h2.congrats {
+  width: 100%!important;
+  text-align: center;
+  font-weight: bold;
+  color: #444;
+  font-size: 30px;
+  
+  -webkit-animation: bounceIn 2s;
+     -moz-animation: bounceIn 2s;
+       -o-animation: bounceIn 2s;
+          animation: bounceIn 2s;
+}
+
+.inline-content {
+  display: inline-block;
+}
+
+h4.success {
+  font-weight: 400;
+  color: #444;
+
+}
+
+.inline-content.email {
+  padding-top: 0;
+display: inline-block;
+  margin-top: 0;
+}
+
+p.order {
+  margin-left: 10px;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 400;
+}
+p.order-contact {
+  font-size: 20px;
+   margin-left: 10px;
+  display: inline;
+}
+
+
+.card-base h3 { 
+  font-weight: 400;
+}
+
+.main-sales-box {
+  background: #f3f3f3;
+  padding: 15px 10px;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 12px;
+  border-top-right-radius: 12px;
+  -webkit-border-top-left-radius: 12px;
+  border-top-left-radius: 12px;
+}
+
+.main-sales-box h2 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.top-row-box {
+  background: #f3f3f3;
+}
+
+.inline-content.input-box {
+  width: 100%;
+  background: #f3f3f3;
+  margin: 0 auto!important;
+  padding: 30px 0;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+}
+
+.input-box h2, .input-box p.text-box .feedback-input  {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h2.width-80 {
+  max-width: 600px;
+}
+
+.input-box h2 {
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.input-box .feedback-input {
+  width: 80%;
+  display: block;
+
+
+}
+
+
+.feedback-input {
+  color:#3c3c3c;
+  font-weight: 400;
+  border-radius: 0;
+
+  padding: 5px 5px 5px 5px;
+  width:90%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+border: 2px solid #ccc;
+-webkit-border-radius: 6px;
+        border-radius: 6px;
+
+}
+
+
+
+h2.success {
+  margin-top: 0;
+    text-align: left;
+    padding-top: 20px;
+    font-weight: 500;
+
+}
+
+
+
+
+@media (max-width: 600px) {
+  .fa-check-circle-o {
+    width: 100%;
+    -webkit-transition: 1s;
+       -moz-transition: 1s;
+        -ms-transition: 1s;
+         -o-transition: 1s;
+            transition: 1s;
+  text-align: center;
+  }
+}

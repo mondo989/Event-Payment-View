@@ -10,6 +10,10 @@ html {
   background: blue;
 }
 
+.gray-font {
+  color: #ccc;
+}
+
 .light-gray {
   background: #ccc;
 }
@@ -17,8 +21,14 @@ html {
 .white {
   background: #FFF;
 }
+
 .pink {
   background: pink;
+}
+
+.no-top-mg {
+  padding-top: 0;
+  margin-top: -20px;
 }
 
 .gray-seperator {
@@ -72,7 +82,6 @@ html {
 
 .save-event-box .about-box p.about-wording {
   padding: 0 20px 20px;
-  background: red!important;
   margin-top: 20px;
 }
 
@@ -85,6 +94,15 @@ p.about-wording {
   font-weight: bold;
   color: #666;
 }
+
+.pay-now {
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: -20px;
+  margin-right: 10px;
+  width: 180px;
+}
+
 .max-img-size {
   width: 300px;
   height: auto;
@@ -179,7 +197,8 @@ a.teamwork-order-btn:hover {
 
 a.teamwork-pay-now-btn {
   background: #47B649;
-  margin-top: -20px!important;
+  /*margin-top: -20px!important;*/
+  
   margin-bottom: 20px;
   width: 150px;
   padding: 20px 0;
@@ -256,11 +275,10 @@ section.right-col div.row {
 .top-row.ticket-text {
   text-align: left;
   -webkit-border-radius: 0;
-          border-radius: 0;
-          border-top: 1px solid #ccc;
-          border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
-
 
 .left.btn:hover,
 .right.btn:hover {
@@ -341,7 +359,6 @@ span.subtotal-amount {
 }
 
 .mb20 {
-
   margin-bottom: 40px;
 }
 /*Carousel*/
@@ -452,7 +469,6 @@ span.subtotal-amount {
 }
 
 p.lead.text-muted {
-
   padding-bottom: 20px;
 }
 
@@ -474,12 +490,13 @@ p.lead.text-muted {
   padding: 10px 0px;
   transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
   border-bottom: 1px solid #f3f3f3;
-  padding: 20px;
+  font-size: 17px;
+  font-weight: 400;
 }
 /*#INPUT_1*/
 
-.input-form-signup:hover, 
-.input-form-signup:active, 
+.input-form-signup:hover,
+.input-form-signup:active,
 .input-form-signup:focus {
   border-bottom: 1px solid #ccc;
 }
@@ -489,7 +506,7 @@ p.lead.text-muted {
   margin-top: 10px;
 }
 
-.form-content-holder:hover{
+.form-content-holder:hover {
   padding: 10px 0;
   margin-top: 10px;
 }
@@ -571,10 +588,47 @@ span.dates {
     width: 200px;
     margin-top: 20px !important;
   }
+  .max-img-size {
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+    float: right;
+  }
   h1 {
     font-size: 20px;
   }
+  .logo-holder .max-img-size {
+    margin: 0 auto!important;
+    float: none;
+  }
+  .teamwork-order-btn.order-now {
+    width: 80%;
+    float: none;
+    margin: 20px auto;
+  }
 }
+
+@media (max-width: 500px) {
+  .max-img-size {
+    float: none;
+    padding-top: 20px;
+  }
+  a.teamwork-order-btn {
+    float: none;
+    width: 100%;
+    margin: 15px auto;
+  }
+  .teamwork-pay-now-btn {
+    width: 100%!important;
+    padding: 15px 0!important;
+  }
+  .mb30 {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 800px) {}
 
 @media (max-width: 400px) {
   span.subtotal-word {
